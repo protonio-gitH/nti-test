@@ -1,0 +1,69 @@
+@import './header';
+@import './top';
+@import './popular';
+@import './discount.scss';
+@import './consultation';
+@import './footer';
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    font-style: normal;
+    overflow-x: hidden;
+
+
+}
+
+
+.container{
+    max-width: 1560px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-title{
+    color: var(--black, #3B3C40);
+    /* h2 medium */
+    font-family: Euclid Circular A;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section-link{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    padding: 5px 5px 5px 30px;
+    border-radius: 15px;
+    background: var(--button-gradient, linear-gradient(96deg, #DD3197 0%, #822FAF 101.4%));
+    
+    &-text{
+        font-size: 18px;
+        line-height: 130%;
+        color: #fff;
+    }
+
+    &-img{
+        padding: 13px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+}
+
+@media (max-width:1200px){
+    .container{
+        padding: 10px 10px 0 10px;
+    }
+}
